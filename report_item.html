@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report Item - Lost & Found Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Report Lost or Found Item</h1>
+  <nav>
+    <a href="homepage.html">Home</a> |
+    <a href="item_listing.html">Items</a>
+  </nav>
+  <form id="reportForm">
+    <label for="type">Type:</label>
+    <select id="type">
+      <option value="Lost">Lost</option>
+      <option value="Found">Found</option>
+    </select>
+    <label for="title">Item Title:</label>
+    <input type="text" id="title" required>
+    <label for="description">Description:</label>
+    <textarea id="description" rows="3"></textarea>
+    <label for="contact">Contact Info:</label>
+    <input type="text" id="contact" required>
+    <button type="submit">Submit</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

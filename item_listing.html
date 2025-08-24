@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Item Listing - Lost & Found Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>All Reported Items</h1>
+  <nav>
+    <a href="homepage.html">Home</a> |
+    <a href="report_item.html">Report Item</a> |
+    <a href="profile.html">Profile</a>
+  </nav>
+  <section>
+    <form id="filterForm">
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="all">All</option>
+        <option value="lost">Lost</option>
+        <option value="found">Found</option>
+      </select>
+      <label for="status">Status:</label>
+      <select id="status">
+        <option value="all">All</option>
+        <option value="open">Open</option>
+        <option value="resolved">Resolved</option>
+      </select>
+      <button type="submit">Filter</button>
+    </form>
+    <div class="items" id="allItems">
+      <!-- All items will be listed here -->
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
